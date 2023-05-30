@@ -1,0 +1,106 @@
+[
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLab.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLab.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLab.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLabCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLabCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLabGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLabGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLabProjectile.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLabProjectile.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\TP_PickUpComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\TP_PickUpComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\TP_WeaponComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\TP_WeaponComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	}
+]

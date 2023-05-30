@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CodeNameLab",
+			"Path": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CodeNameLabEditor",
+			"Path": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLabEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

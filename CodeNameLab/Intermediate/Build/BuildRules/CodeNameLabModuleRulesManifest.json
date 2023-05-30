@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLab.Build.cs",
+		"D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab.Target.cs",
+		"D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLabEditor.Target.cs"
+	],
+	"EngineVersion": "5.2.0"
+}
