@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\github\\codenamelab\\codenamelab\\source\\codenamelab\\codenamelab.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\x64\\codenamelabeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\codenamelab\\definitions.codenamelab.h",
+            "d:\\github\\codenamelab\\codenamelab\\source\\codenamelab\\codenamelab.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

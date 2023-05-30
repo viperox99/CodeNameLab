@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\unrealeditor\\inc\\codenamelab\\uht\\codenamelabgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\x64\\codenamelabeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\codenamelab\\definitions.codenamelab.h",
+            "d:\\github\\codenamelab\\codenamelab\\source\\codenamelab\\codenamelabgamemode.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\unrealeditor\\inc\\codenamelab\\uht\\codenamelabgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
