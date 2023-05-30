@@ -11,24 +11,24 @@ void EmptyLinkFunctionForGeneratedCodeDoorInterface() {}
 // Cross Module References
 	CODENAMELAB_API UClass* Z_Construct_UClass_UDoorInterface();
 	CODENAMELAB_API UClass* Z_Construct_UClass_UDoorInterface_NoRegister();
-	CODENAMELAB_API UEnum* Z_Construct_UEnum_CodeNameLab_ELockTypes();
+	CODENAMELAB_API UEnum* Z_Construct_UEnum_CodeNameLab_ELockType();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_CodeNameLab();
 // End Cross Module References
-	static FEnumRegistrationInfo Z_Registration_Info_UEnum_ELockTypes;
-	static UEnum* ELockTypes_StaticEnum()
+	static FEnumRegistrationInfo Z_Registration_Info_UEnum_ELockType;
+	static UEnum* ELockType_StaticEnum()
 	{
-		if (!Z_Registration_Info_UEnum_ELockTypes.OuterSingleton)
+		if (!Z_Registration_Info_UEnum_ELockType.OuterSingleton)
 		{
-			Z_Registration_Info_UEnum_ELockTypes.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_CodeNameLab_ELockTypes, (UObject*)Z_Construct_UPackage__Script_CodeNameLab(), TEXT("ELockTypes"));
+			Z_Registration_Info_UEnum_ELockType.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_CodeNameLab_ELockType, (UObject*)Z_Construct_UPackage__Script_CodeNameLab(), TEXT("ELockType"));
 		}
-		return Z_Registration_Info_UEnum_ELockTypes.OuterSingleton;
+		return Z_Registration_Info_UEnum_ELockType.OuterSingleton;
 	}
-	template<> CODENAMELAB_API UEnum* StaticEnum<ELockTypes>()
+	template<> CODENAMELAB_API UEnum* StaticEnum<ELockType>()
 	{
-		return ELockTypes_StaticEnum();
+		return ELockType_StaticEnum();
 	}
-	struct Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics
+	struct Z_Construct_UEnum_CodeNameLab_ELockType_Statics
 	{
 		static const UECodeGen_Private::FEnumeratorParam Enumerators[];
 #if WITH_METADATA
@@ -36,48 +36,54 @@ void EmptyLinkFunctionForGeneratedCodeDoorInterface() {}
 #endif
 		static const UECodeGen_Private::FEnumParams EnumParams;
 	};
-	const UECodeGen_Private::FEnumeratorParam Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::Enumerators[] = {
-		{ "ELockTypes::VE_None", (int64)ELockTypes::VE_None },
-		{ "ELockTypes::VE_Key", (int64)ELockTypes::VE_Key },
-		{ "ELockTypes::VE_Number", (int64)ELockTypes::VE_Number },
-		{ "ELockTypes::VE_DeadBolt", (int64)ELockTypes::VE_DeadBolt },
-		{ "ELockTypes::VE_Finger", (int64)ELockTypes::VE_Finger },
+	const UECodeGen_Private::FEnumeratorParam Z_Construct_UEnum_CodeNameLab_ELockType_Statics::Enumerators[] = {
+		{ "VE_None", (int64)VE_None },
+		{ "VE_Never", (int64)VE_Never },
+		{ "VE_Key", (int64)VE_Key },
+		{ "VE_KeyCard", (int64)VE_KeyCard },
+		{ "VE_Number", (int64)VE_Number },
+		{ "VE_DeadBolt", (int64)VE_DeadBolt },
+		{ "VE_Finger", (int64)VE_Finger },
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::Enum_MetaDataParams[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_CodeNameLab_ELockType_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "ModuleRelativePath", "Interface/DoorInterface.h" },
 		{ "VE_DeadBolt.DisplayName", "Dead bolt Lock" },
-		{ "VE_DeadBolt.Name", "ELockTypes::VE_DeadBolt" },
+		{ "VE_DeadBolt.Name", "VE_DeadBolt" },
 		{ "VE_Finger.DisplayName", "Finger Print Lock" },
-		{ "VE_Finger.Name", "ELockTypes::VE_Finger" },
+		{ "VE_Finger.Name", "VE_Finger" },
 		{ "VE_Key.DisplayName", "Key Lock" },
-		{ "VE_Key.Name", "ELockTypes::VE_Key" },
+		{ "VE_Key.Name", "VE_Key" },
+		{ "VE_KeyCard.DisplayName", "KeyCard Lock" },
+		{ "VE_KeyCard.Name", "VE_KeyCard" },
+		{ "VE_Never.DisplayName", "Never Opens" },
+		{ "VE_Never.Name", "VE_Never" },
 		{ "VE_None.DisplayName", "No Lock" },
-		{ "VE_None.Name", "ELockTypes::VE_None" },
+		{ "VE_None.Name", "VE_None" },
 		{ "VE_Number.DisplayName", "Number Lock" },
-		{ "VE_Number.Name", "ELockTypes::VE_Number" },
+		{ "VE_Number.Name", "VE_Number" },
 	};
 #endif
-	const UECodeGen_Private::FEnumParams Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::EnumParams = {
+	const UECodeGen_Private::FEnumParams Z_Construct_UEnum_CodeNameLab_ELockType_Statics::EnumParams = {
 		(UObject*(*)())Z_Construct_UPackage__Script_CodeNameLab,
 		nullptr,
-		"ELockTypes",
-		"ELockTypes",
-		Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::Enumerators),
+		"ELockType",
+		"ELockType",
+		Z_Construct_UEnum_CodeNameLab_ELockType_Statics::Enumerators,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_CodeNameLab_ELockType_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EEnumFlags::None,
-		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::Enum_MetaDataParams))
+		(uint8)UEnum::ECppForm::Regular,
+		METADATA_PARAMS(Z_Construct_UEnum_CodeNameLab_ELockType_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_CodeNameLab_ELockType_Statics::Enum_MetaDataParams))
 	};
-	UEnum* Z_Construct_UEnum_CodeNameLab_ELockTypes()
+	UEnum* Z_Construct_UEnum_CodeNameLab_ELockType()
 	{
-		if (!Z_Registration_Info_UEnum_ELockTypes.InnerSingleton)
+		if (!Z_Registration_Info_UEnum_ELockType.InnerSingleton)
 		{
-			UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_ELockTypes.InnerSingleton, Z_Construct_UEnum_CodeNameLab_ELockTypes_Statics::EnumParams);
+			UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_ELockType.InnerSingleton, Z_Construct_UEnum_CodeNameLab_ELockType_Statics::EnumParams);
 		}
-		return Z_Registration_Info_UEnum_ELockTypes.InnerSingleton;
+		return Z_Registration_Info_UEnum_ELockType.InnerSingleton;
 	}
 	void UDoorInterface::StaticRegisterNativesUDoorInterface()
 	{
@@ -144,12 +150,12 @@ void EmptyLinkFunctionForGeneratedCodeDoorInterface() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::EnumInfo[] = {
-		{ ELockTypes_StaticEnum, TEXT("ELockTypes"), &Z_Registration_Info_UEnum_ELockTypes, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3456706433U) },
+		{ ELockType_StaticEnum, TEXT("ELockType"), &Z_Registration_Info_UEnum_ELockType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 613784444U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_UDoorInterface, UDoorInterface::StaticClass, TEXT("UDoorInterface"), &Z_Registration_Info_UClass_UDoorInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDoorInterface), 1552722530U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_3359035969(TEXT("/Script/CodeNameLab"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_731902150(TEXT("/Script/CodeNameLab"),
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::EnumInfo));
