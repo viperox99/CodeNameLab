@@ -9,7 +9,9 @@
 				"D:/GitHub/CodeNameLab/CodeNameLab/Content/FirstPerson/Maps/FirstPersonMap.umap",
 				"D:/GitHub/CodeNameLab/CodeNameLab/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
 				"D:/GitHub/CodeNameLab/CodeNameLab/Content/FirstPerson/NewBlueprint.uasset",
-				"D:/GitHub/CodeNameLab/CodeNameLab/Content/FirstPerson/Input/Actions/NewInputAction.uasset"
+				"D:/GitHub/CodeNameLab/CodeNameLab/Content/FirstPerson/Input/Actions/NewInputAction.uasset",
+				"D:/GitHub/CodeNameLab/CodeNameLab/Content/FirstPerson/Blueprints/BP_PickUp_Rifle.uasset",
+				"D:/GitHub/CodeNameLab/CodeNameLab/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/8K/0OLPBOSZCPU1X7E3PCLCGF.uasset"
 			]
 		}
 	]

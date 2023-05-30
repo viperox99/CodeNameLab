@@ -1,5 +1,21 @@
 [
 	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Actor\\KeyActor.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Actor\\KeyActor.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Characters\\PlayerCharacter.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
@@ -81,6 +97,54 @@
 	},
 	{
 		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\CodeNameLabProjectile.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Interface\\DoorInterface.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Interface\\DoorInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Interface\\InteractInterface.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Interface\\InteractInterface.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Interface\\WeightInterface.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Interface\\WeightInterface.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
 			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_CodeNameLab\\CodeNameLab.261.rsp"
