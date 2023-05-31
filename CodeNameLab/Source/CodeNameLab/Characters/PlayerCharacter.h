@@ -39,6 +39,14 @@ class CODENAMELAB_API APlayerCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	class UInputAction* MoveAction;
 
+	/** Interact Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+	class UInputAction* InteractAction;
+
+	/** Setting up the range for the line trace*/
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Interaction, meta = (AllowPrivateAccess = "true"))
+	float Range = 100.f;
+
 public:
 	// Sets default values for this character's properties
 	APlayerCharacter();
@@ -65,6 +73,9 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
+
+	/** Called for interact input */
+	void Interact();
 
 public:
 	/** Returns Mesh1P subobject **/

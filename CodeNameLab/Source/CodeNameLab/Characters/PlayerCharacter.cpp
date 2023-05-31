@@ -9,6 +9,8 @@
 #include "EnhancedInputSubsystems.h"
 #include "UObject/ConstructorHelpers.h"
 
+#include "CodeNameLab\Interface\InteractInterface.h"
+
 // Sets default values
 APlayerCharacter::APlayerCharacter()
 {
@@ -75,6 +77,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 		//Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
+
+		//Interacting
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &APlayerCharacter::Interact);
 	}
 
 }
@@ -102,6 +107,34 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 		// add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
+	}
+}
+
+void APlayerCharacter::Interact() 
+{
+	UE_LOG(LogTemp, Error, TEXT("Interact Called"));
+	FHitResult Hit;
+
+	FVector StartLocation = GetActorLocation();
+	FVector EndLocation = StartLocation + (GetActorForwardVector() * Range);
+
+	FCollisionQueryParams QueryParams;
+	QueryParams.AddIgnoredActor(this);
+
+	bool bSuccess = GetWorld()->LineTraceSingleByChannel(Hit,
+		StartLocation, 
+		EndLocation, 
+		ECollisionChannel::ECC_Visibility, 
+		QueryParams);
+	if(bSuccess)
+	{
+		IInteractInterface* Interface = Cast<IInteractInterface>(Hit.GetActor());
+		if (Interface)
+		{
+			Interface->Interact();
+			UE_LOG(LogTemp, Error, TEXT("Interface"));
+		}
+		
 	}
 }
 

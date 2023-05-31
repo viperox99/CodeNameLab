@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeCodeNameLab_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x60A2E546,
+				0x8752BA5C,
 				0x5866CD3D,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -29,5 +29,5 @@ void EmptyLinkFunctionForGeneratedCodeCodeNameLab_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_CodeNameLab.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CodeNameLab(Z_Construct_UPackage__Script_CodeNameLab, TEXT("/Script/CodeNameLab"), Z_Registration_Info_UPackage__Script_CodeNameLab, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x60A2E546, 0x5866CD3D));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CodeNameLab(Z_Construct_UPackage__Script_CodeNameLab, TEXT("/Script/CodeNameLab"), Z_Registration_Info_UPackage__Script_CodeNameLab, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x8752BA5C, 0x5866CD3D));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
