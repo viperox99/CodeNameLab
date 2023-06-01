@@ -41,7 +41,7 @@ private:
 	UPROPERTY()
 	TEnumAsByte<ELockType> LockEnumOriginal;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess = true))
 	class UStaticMeshComponent* MeshComp;
 
 };

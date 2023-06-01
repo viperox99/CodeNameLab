@@ -92,12 +92,12 @@ protected:
 private:
 	void InterfaceCall(FHitResult Hit);
 
-	void LockCheck( class IDoorInterface* DoorInterface, EKeyType KeyType);
+	void LockCheck( class IDoorInterface* DoorInterface, EKeyType KeyType, AActor* Item);
 
 	bool SetupLineTrace(FHitResult& Hit);
 
 	void UnlockItem(FHitResult Hit);
-
+	
 public:
 	/** Returns Mesh1P subobject **/
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }

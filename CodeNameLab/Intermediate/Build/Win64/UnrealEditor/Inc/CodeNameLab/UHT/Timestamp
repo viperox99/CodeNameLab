@@ -3,10 +3,10 @@ D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\CodeNameLabGameMode.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\CodeNameLabProjectile.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\TP_PickUpComponent.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\TP_WeaponComponent.h
-D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Interface\DoorInterface.h
+D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Actor\DoorActor.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Actor\KeyActor.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Characters\PlayerCharacter.h
+D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Interface\DoorInterface.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Interface\InteractInterface.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Interface\KeyInterface.h
-D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Actor\DoorActor.h
 D:\GitHub\CodeNameLab\CodeNameLab\Source\CodeNameLab\Interface\WeightInterface.h

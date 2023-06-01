@@ -35,4 +35,7 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = KeyType, meta=(AllowPrivateAccess = true))
 	TEnumAsByte<EKeyType> KeyEnum;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess = true))
+	class UStaticMeshComponent* MeshComp;
+
 };

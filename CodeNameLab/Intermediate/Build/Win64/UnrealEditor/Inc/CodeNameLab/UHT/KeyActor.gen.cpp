@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 	CODENAMELAB_API UClass* Z_Construct_UClass_UKeyInterface_NoRegister();
 	CODENAMELAB_API UEnum* Z_Construct_UEnum_CodeNameLab_EKeyType();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CodeNameLab();
 // End Cross Module References
 	void AKeyActor::StaticRegisterNativesAKeyActor()
@@ -35,6 +36,10 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_KeyEnum_MetaData[];
 #endif
 		static const UECodeGen_Private::FBytePropertyParams NewProp_KeyEnum;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MeshComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComp;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -58,8 +63,18 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 	};
 #endif
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum = { "KeyEnum", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AKeyActor, KeyEnum), Z_Construct_UEnum_CodeNameLab_EKeyType, METADATA_PARAMS(Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum_MetaData)) }; // 2813849708
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AKeyActor_Statics::NewProp_MeshComp_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "KeyActor" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Actor/KeyActor.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKeyActor_Statics::NewProp_MeshComp = { "MeshComp", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AKeyActor, MeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AKeyActor_Statics::NewProp_MeshComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AKeyActor_Statics::NewProp_MeshComp_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AKeyActor_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeyActor_Statics::NewProp_MeshComp,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AKeyActor_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(AKeyActor, IInteractInterface), false },  // 2766265639
@@ -102,9 +117,9 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AKeyActor, AKeyActor::StaticClass, TEXT("AKeyActor"), &Z_Registration_Info_UClass_AKeyActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKeyActor), 2385104400U) },
+		{ Z_Construct_UClass_AKeyActor, AKeyActor::StaticClass, TEXT("AKeyActor"), &Z_Registration_Info_UClass_AKeyActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKeyActor), 2907773833U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_1100323391(TEXT("/Script/CodeNameLab"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_308818791(TEXT("/Script/CodeNameLab"),
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
