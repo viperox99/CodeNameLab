@@ -24,4 +24,6 @@ class CODENAMELAB_API IInteractInterface
 public:
 
 	virtual void Interact() = 0;
+
+	virtual AActor* FindItemForPickup() = 0;
 };

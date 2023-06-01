@@ -5,10 +5,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "CodeNameLab\Interface\InteractInterface.h"
+#include "CodeNameLab/Interface/KeyInterface.h"
 #include "KeyActor.generated.h"
 
 UCLASS()
-class CODENAMELAB_API AKeyActor : public AActor, public IInteractInterface
+class CODENAMELAB_API AKeyActor : public AActor, public IInteractInterface, public IKeyInterface
 {
 	GENERATED_BODY()
 	
@@ -25,5 +26,13 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void Interact() override;
+
+	virtual AActor* FindItemForPickup() override;
+
+	virtual bool FindKeyType(EKeyType& KeyType) override;
+
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = KeyType, meta=(AllowPrivateAccess = true))
+	TEnumAsByte<EKeyType> KeyEnum;
 
 };

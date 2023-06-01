@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "InputActionValue.h"
+#include "CodeNameLab/Interface/KeyInterface.h"
 #include "PlayerCharacter.generated.h"
 
 class UInputComponent;
@@ -43,9 +44,17 @@ class CODENAMELAB_API APlayerCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	class UInputAction* InteractAction;
 
+	/** Unlock Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+	class UInputAction* UnlockAction;
+
 	/** Setting up the range for the line trace*/
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Interaction, meta = (AllowPrivateAccess = "true"))
 	float Range = 100.f;
+
+	/** Array for items*/
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+	TArray<AActor*> Inventory;
 
 public:
 	// Sets default values for this character's properties
@@ -76,6 +85,18 @@ protected:
 
 	/** Called for interact input */
 	void Interact();
+
+	/** Called for Unlocking Input*/
+	void Unlock();
+
+private:
+	void InterfaceCall(FHitResult Hit);
+
+	void LockCheck( class IDoorInterface* DoorInterface, EKeyType KeyType);
+
+	bool SetupLineTrace(FHitResult& Hit);
+
+	void UnlockItem(FHitResult Hit);
 
 public:
 	/** Returns Mesh1P subobject **/

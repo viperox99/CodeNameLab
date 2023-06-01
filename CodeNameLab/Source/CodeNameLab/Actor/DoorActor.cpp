@@ -20,6 +20,8 @@ ADoorActor::ADoorActor()
 void ADoorActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	LockEnumOriginal = FindTypeOfLock();
 	
 }
 
@@ -68,8 +70,22 @@ void ADoorActor::Interact()
 	}
 }
 
+AActor* ADoorActor::FindItemForPickup() 
+{
+	return nullptr;
+}
+
 void ADoorActor::SetLock() 
 {
+
+	if (FindTypeOfLock() == LockEnumOriginal)
+	{
+		LockEnum = VE_None;
+	}
+	else
+	{
+		LockEnum = LockEnumOriginal;
+	}
 	
 }
 

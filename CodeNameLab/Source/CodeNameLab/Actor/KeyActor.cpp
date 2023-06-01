@@ -30,3 +30,29 @@ void AKeyActor::Interact()
 	
 }
 
+AActor* AKeyActor::FindItemForPickup() 
+{
+	return this;
+}
+
+bool AKeyActor::FindKeyType(EKeyType& KeyType) 
+{
+	switch (KeyEnum)
+	{
+	case VE_Keycard:
+		KeyType = VE_Keycard;
+		return true;
+
+	case VE_NumberKey:
+		KeyType = VE_NumberKey;
+		return true;
+
+	case VE_Physical:
+		KeyType = VE_Physical;
+		return true;
+	
+	default:
+		return false;
+	}
+}
+

@@ -14,11 +14,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CODENAMELAB_PlayerCharacter_generated_h
 
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_SPARSE_DATA
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_RPC_WRAPPERS
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_ACCESSORS
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_INCLASS_NO_PURE_DECLS \
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_SPARSE_DATA
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_RPC_WRAPPERS
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_ACCESSORS
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerCharacter(); \
 	friend struct Z_Construct_UClass_APlayerCharacter_Statics; \
@@ -27,7 +27,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerCharacter)
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_INCLASS \
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesAPlayerCharacter(); \
 	friend struct Z_Construct_UClass_APlayerCharacter_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerCharacter)
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_STANDARD_CONSTRUCTORS \
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APlayerCharacter) \
@@ -50,7 +50,7 @@ public: \
 	NO_API virtual ~APlayerCharacter();
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_ENHANCED_CONSTRUCTORS \
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APlayerCharacter(APlayerCharacter&&); \
@@ -62,27 +62,27 @@ public: \
 	NO_API virtual ~APlayerCharacter();
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_17_PROLOG
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_GENERATED_BODY_LEGACY \
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_18_PROLOG
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_SPARSE_DATA \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_RPC_WRAPPERS \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_ACCESSORS \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_INCLASS \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_STANDARD_CONSTRUCTORS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_SPARSE_DATA \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_RPC_WRAPPERS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_ACCESSORS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_INCLASS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_GENERATED_BODY \
+#define FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_SPARSE_DATA \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_ACCESSORS \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_INCLASS_NO_PURE_DECLS \
-	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_20_ENHANCED_CONSTRUCTORS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_SPARSE_DATA \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_ACCESSORS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_INCLASS_NO_PURE_DECLS \
+	FID_CodeNameLab_Source_CodeNameLab_Characters_PlayerCharacter_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

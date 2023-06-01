@@ -10,6 +10,8 @@
 #include "UObject/ConstructorHelpers.h"
 
 #include "CodeNameLab\Interface\InteractInterface.h"
+#include "CodeNameLab/Interface/DoorInterface.h"
+#include "CodeNameLab/Interface/KeyInterface.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -79,7 +81,10 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
 
 		//Interacting
-		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &APlayerCharacter::Interact);
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Interact);
+		
+		//Unlocking
+		EnhancedInputComponent->BindAction(UnlockAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Unlock);
 	}
 
 }
@@ -115,26 +120,95 @@ void APlayerCharacter::Interact()
 	UE_LOG(LogTemp, Error, TEXT("Interact Called"));
 	FHitResult Hit;
 
+	bool bSuccess = SetupLineTrace(Hit);
+	if(bSuccess)
+	{
+		InterfaceCall(Hit);
+	}
+}
+
+void APlayerCharacter::Unlock() 
+{
+	UE_LOG(LogTemp, Error, TEXT("Unlock Called"));
+	FHitResult Hit;
+
+	bool bSuccess = SetupLineTrace(Hit);
+	if(bSuccess)
+	{
+		UnlockItem(Hit);
+	}
+}
+
+void APlayerCharacter::InterfaceCall(FHitResult Hit) 
+{
+	IInteractInterface* Interface = Cast<IInteractInterface>(Hit.GetActor());
+	if (Interface)
+	{
+		Interface->Interact();
+		UE_LOG(LogTemp, Error, TEXT("Interface"));
+		AActor* Item = Interface->FindItemForPickup();
+		if(Item != nullptr)
+		{
+			Inventory.Add(Item);
+			UE_LOG(LogTemp, Error, TEXT("Item : %s has been added to Inventory"), *Item->GetName());
+			Item->Destroy();
+		}
+	}
+}
+
+void APlayerCharacter::LockCheck(IDoorInterface* DoorInterface, EKeyType KeyType) 
+{
+	ELockType LockType = DoorInterface->FindTypeOfLock();
+	if (KeyType == EKeyType::VE_NumberKey && LockType == VE_Number )
+	{
+		DoorInterface->SetLock();
+		UE_LOG(LogTemp, Error, TEXT("Door Unlocked"));
+	}
+	else if (KeyType == EKeyType::VE_Keycard && LockType == VE_KeyCard)
+	{
+		DoorInterface->SetLock();
+		UE_LOG(LogTemp, Error, TEXT("Door Unlocked"));
+	}
+	else if (KeyType == EKeyType::VE_Physical && LockType == VE_Key)
+	{
+		DoorInterface->SetLock();
+		UE_LOG(LogTemp, Error, TEXT("Door Unlocked"));
+	}
+}
+
+bool APlayerCharacter::SetupLineTrace(FHitResult& Hit) 
+{
 	FVector StartLocation = GetActorLocation();
 	FVector EndLocation = StartLocation + (GetActorForwardVector() * Range);
 
 	FCollisionQueryParams QueryParams;
 	QueryParams.AddIgnoredActor(this);
 
-	bool bSuccess = GetWorld()->LineTraceSingleByChannel(Hit,
+	 return GetWorld()->LineTraceSingleByChannel(Hit,
 		StartLocation, 
 		EndLocation, 
 		ECollisionChannel::ECC_Visibility, 
 		QueryParams);
-	if(bSuccess)
+}
+
+void APlayerCharacter::UnlockItem(FHitResult Hit) 
+{
+	IDoorInterface* DoorInterface = Cast<IDoorInterface>(Hit.GetActor());
+	if (DoorInterface)
 	{
-		IInteractInterface* Interface = Cast<IInteractInterface>(Hit.GetActor());
-		if (Interface)
+		for (AActor* ItemInstance : Inventory)
 		{
-			Interface->Interact();
-			UE_LOG(LogTemp, Error, TEXT("Interface"));
+			IKeyInterface* KeyInterface = Cast<IKeyInterface>(ItemInstance);
+			if(KeyInterface)
+			{
+				EKeyType KeyType;
+				bool bSuccess = KeyInterface->FindKeyType(KeyType);
+				if(bSuccess)
+				{
+					LockCheck(DoorInterface, KeyType);
+				}
+			}
 		}
-		
 	}
 }
 

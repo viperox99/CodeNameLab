@@ -27,14 +27,19 @@ public:
 
 	virtual void Interact() override;
 
+	virtual AActor* FindItemForPickup() override;
+
 	virtual void SetLock() override;
 
 	virtual ELockType FindTypeOfLock() override;
 
 private:
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess = true))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = DoorType, meta=(AllowPrivateAccess = true))
 	TEnumAsByte<ELockType> LockEnum;
+
+	UPROPERTY()
+	TEnumAsByte<ELockType> LockEnumOriginal;
 
 	UPROPERTY(VisibleAnywhere)
 	class UStaticMeshComponent* MeshComp;

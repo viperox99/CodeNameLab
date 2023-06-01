@@ -12,6 +12,8 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 	CODENAMELAB_API UClass* Z_Construct_UClass_AKeyActor();
 	CODENAMELAB_API UClass* Z_Construct_UClass_AKeyActor_NoRegister();
 	CODENAMELAB_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
+	CODENAMELAB_API UClass* Z_Construct_UClass_UKeyInterface_NoRegister();
+	CODENAMELAB_API UEnum* Z_Construct_UEnum_CodeNameLab_EKeyType();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_CodeNameLab();
 // End Cross Module References
@@ -29,6 +31,11 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_KeyEnum_MetaData[];
+#endif
+		static const UECodeGen_Private::FBytePropertyParams NewProp_KeyEnum;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -43,8 +50,20 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 		{ "ModuleRelativePath", "Actor/KeyActor.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "KeyType" },
+		{ "ModuleRelativePath", "Actor/KeyActor.h" },
+	};
+#endif
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum = { "KeyEnum", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(AKeyActor, KeyEnum), Z_Construct_UEnum_CodeNameLab_EKeyType, METADATA_PARAMS(Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum_MetaData)) }; // 2813849708
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AKeyActor_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeyActor_Statics::NewProp_KeyEnum,
+	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AKeyActor_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UInteractInterface_NoRegister, (int32)VTABLE_OFFSET(AKeyActor, IInteractInterface), false },  // 2766265639
+			{ Z_Construct_UClass_UKeyInterface_NoRegister, (int32)VTABLE_OFFSET(AKeyActor, IKeyInterface), false },  // 2465064289
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AKeyActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AKeyActor>::IsAbstract,
@@ -55,11 +74,11 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AKeyActor_Statics::PropPointers,
 		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AKeyActor_Statics::PropPointers),
 		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AKeyActor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AKeyActor_Statics::Class_MetaDataParams))
@@ -83,9 +102,9 @@ void EmptyLinkFunctionForGeneratedCodeKeyActor() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AKeyActor, AKeyActor::StaticClass, TEXT("AKeyActor"), &Z_Registration_Info_UClass_AKeyActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKeyActor), 1918528547U) },
+		{ Z_Construct_UClass_AKeyActor, AKeyActor::StaticClass, TEXT("AKeyActor"), &Z_Registration_Info_UClass_AKeyActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKeyActor), 2385104400U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_2435988008(TEXT("/Script/CodeNameLab"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_1100323391(TEXT("/Script/CodeNameLab"),
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_KeyActor_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
