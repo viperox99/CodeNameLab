@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "CodeNameLab/Interface/InteractInterface.h"
 #include "CodeNameLab/Interface/DoorInterface.h"
+#include "Components/TimelineComponent.h"
 #include "DoorActor.generated.h"
 
 UCLASS()
@@ -41,7 +42,10 @@ private:
 	UPROPERTY()
 	TEnumAsByte<ELockType> LockEnumOriginal;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta=(AllowPrivateAccess = true))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMeshComp, meta=(AllowPrivateAccess = true))
 	class UStaticMeshComponent* MeshComp;
+
+	UPROPERTY(EditAnywhere)
+	UCurveFloat* DoorCurve;
 
 };
