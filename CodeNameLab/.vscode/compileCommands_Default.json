@@ -32,6 +32,22 @@
 		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
 	},
 	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Actor\\PressurePlate.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Actor\\PressurePlate.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\GitHub\\CodeNameLab\\CodeNameLab\\.vscode\\compileCommands_Default\\CodeNameLab.261.rsp"
+		],
+		"directory": "C:\\Users\\symms\\Documents\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "D:\\GitHub\\CodeNameLab\\CodeNameLab\\Source\\CodeNameLab\\Characters\\PlayerCharacter.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\Hostx64\\x64\\cl.exe",
