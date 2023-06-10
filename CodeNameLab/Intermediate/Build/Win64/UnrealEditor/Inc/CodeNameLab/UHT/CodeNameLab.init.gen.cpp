@@ -21,13 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeCodeNameLab_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xA991C774,
-				0xFF8790DB,
+				0x727FA080,
+				0x9A708EDD,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_CodeNameLab.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_CodeNameLab.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CodeNameLab(Z_Construct_UPackage__Script_CodeNameLab, TEXT("/Script/CodeNameLab"), Z_Registration_Info_UPackage__Script_CodeNameLab, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xA991C774, 0xFF8790DB));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_CodeNameLab(Z_Construct_UPackage__Script_CodeNameLab, TEXT("/Script/CodeNameLab"), Z_Registration_Info_UPackage__Script_CodeNameLab, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x727FA080, 0x9A708EDD));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

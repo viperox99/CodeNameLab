@@ -4,6 +4,7 @@
 #include "DoorActor.h"
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Math/UnrealMathUtility.h"
 
 // Sets default values
 ADoorActor::ADoorActor()
@@ -25,6 +26,10 @@ void ADoorActor::BeginPlay()
 
 	LockEnumOriginal = FindTypeOfLock();
 
+	StartLocation = GetActorLocation();
+
+	StartRotation = GetActorRotation();
+
 }
 
 // Called every frame
@@ -32,6 +37,23 @@ void ADoorActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	switch (DoorOpeningEnum)
+	{
+	case VE_Rotation:
+		/* code */
+		break;
+
+	case VE_Location:
+		LocationMoving(DeltaTime);
+		break;
+		
+	case VE_NotOpen:
+		/* code */
+		break;
+
+	default:
+		break;
+	}
 }
 
 void ADoorActor::Interact() 
@@ -40,6 +62,8 @@ void ADoorActor::Interact()
 	{
 	case ELockType::VE_None:
 		UE_LOG(LogTemp, Error, TEXT("Door Opened"));
+		bOpenDoor = !bOpenDoor;
+		UE_LOG(LogTemp, Error, TEXT("%s"), (bOpenDoor ? TEXT("true"): TEXT("false")));
 		break;
 
 	case ELockType::VE_Never:
@@ -94,5 +118,18 @@ void ADoorActor::SetLock()
 ELockType ADoorActor::FindTypeOfLock() 
 {
 	return LockEnum;
+}
+
+void ADoorActor::LocationMoving(float DeltaTime) 
+{
+	FVector TargetLocation = StartLocation;
+	if(bOpenDoor)
+	{
+		TargetLocation = StartLocation + EndLocation;
+	}
+	FVector CurrentLocation = GetActorLocation();
+	float Speed = EndLocation.Length()/MoveTime;
+	FVector NewLocation = FMath::VInterpConstantTo(CurrentLocation, TargetLocation, DeltaTime, Speed);
+	SetActorLocation(NewLocation);
 }
 

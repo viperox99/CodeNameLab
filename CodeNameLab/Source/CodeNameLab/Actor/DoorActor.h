@@ -9,6 +9,14 @@
 #include "Components/TimelineComponent.h"
 #include "DoorActor.generated.h"
 
+UENUM(BlueprintType)
+enum EDoorOpen
+{
+	VE_Rotation		UMETA(DisplayName = "Rotates"),
+	VE_Location		UMETA(DisplayName = "Moves"),
+	VE_NotOpen		UMETA(DisplayName = "Doesn't Open")
+};
+
 UCLASS()
 class CODENAMELAB_API ADoorActor : public AActor, public IInteractInterface, public IDoorInterface
 {
@@ -47,5 +55,29 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	UCurveFloat* DoorCurve;
+
+	bool bOpenDoor = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = DoorOpening, meta=(AllowPrivateAccess = true))
+	TEnumAsByte<EDoorOpen> DoorOpeningEnum;
+
+	UPROPERTY(BlueprintReadOnly, Category = DoorOpening, meta=(AllowPrivateAccess = true, EditCondition = "DoorOpeningEnum == EDoorType::VE_Location", EditConditionHides))
+	FVector StartLocation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = DoorOpening, meta=(AllowPrivateAccess = true, EditCondition = "DoorOpeningEnum == EDoorType::VE_Location", EditConditionHides, MakeEditWidget))
+	FVector EndLocation;
+
+	UPROPERTY(BlueprintReadOnly, Category = DoorOpening, meta=(AllowPrivateAccess = true, EditCondition = "DoorOpeningEnum == EDoorType::VE_Rotation", EditConditionHides))
+	FRotator StartRotation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = DoorOpening, meta=(AllowPrivateAccess = true, EditCondition = "DoorOpeningEnum == EDoorType::VE_Rotation", EditConditionHides))
+	FRotator EndRotation;
+
+	UPROPERTY(EditAnywhere, Category = DoorOpening, meta=(AllowPrivateAccess = true))
+	float MoveTime = 4;
+
+private:
+
+	void LocationMoving(float DeltaTime);
 
 };
