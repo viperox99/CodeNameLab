@@ -15,10 +15,8 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 	CODENAMELAB_API UClass* Z_Construct_UClass_UInteractInterface_NoRegister();
 	CODENAMELAB_API UEnum* Z_Construct_UEnum_CodeNameLab_EDoorOpen();
 	CODENAMELAB_API UEnum* Z_Construct_UEnum_CodeNameLab_ELockType();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CodeNameLab();
 // End Cross Module References
@@ -107,10 +105,6 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComp;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_DoorCurve_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_DoorCurve;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_DoorOpeningEnum_MetaData[];
 #endif
 		static const UECodeGen_Private::FBytePropertyParams NewProp_DoorOpeningEnum;
@@ -123,13 +117,13 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 #endif
 		static const UECodeGen_Private::FStructPropertyParams NewProp_EndLocation;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_StartRotation_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_StartYaw_MetaData[];
 #endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_StartRotation;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_StartYaw;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_EndRotation_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EndYaw_MetaData[];
 #endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_EndRotation;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_EndYaw;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MoveTime_MetaData[];
 #endif
@@ -173,13 +167,6 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComp = { "MeshComp", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, MeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComp_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_DoorCurve_MetaData[] = {
-		{ "Category", "DoorActor" },
-		{ "ModuleRelativePath", "Actor/DoorActor.h" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_DoorCurve = { "DoorCurve", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, DoorCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_DoorCurve_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_DoorCurve_MetaData)) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_DoorOpeningEnum_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "DoorOpening" },
@@ -209,7 +196,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_EndLocation = { "EndLocation", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, EndLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_EndLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_EndLocation_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_StartRotation_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_StartYaw_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "DoorOpening" },
 		{ "EditCondition", "DoorOpeningEnum == EDoorType::VE_Rotation" },
@@ -217,9 +204,9 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		{ "ModuleRelativePath", "Actor/DoorActor.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_StartRotation = { "StartRotation", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, StartRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_StartRotation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_StartRotation_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_StartYaw = { "StartYaw", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, StartYaw), METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_StartYaw_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_StartYaw_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_EndRotation_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_EndYaw_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
 		{ "Category", "DoorOpening" },
 		{ "EditCondition", "DoorOpeningEnum == EDoorType::VE_Rotation" },
@@ -227,7 +214,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		{ "ModuleRelativePath", "Actor/DoorActor.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_EndRotation = { "EndRotation", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, EndRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_EndRotation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_EndRotation_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_EndYaw = { "EndYaw", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, EndYaw), METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_EndYaw_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_EndYaw_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_MoveTime_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -240,12 +227,11 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnum,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComp,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_DoorCurve,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_DoorOpeningEnum,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_StartLocation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_EndLocation,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_StartRotation,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_EndRotation,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_StartYaw,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_EndYaw,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoorActor_Statics::NewProp_MoveTime,
 	};
 		const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ADoorActor_Statics::InterfaceParams[] = {
@@ -293,9 +279,9 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		{ EDoorOpen_StaticEnum, TEXT("EDoorOpen"), &Z_Registration_Info_UEnum_EDoorOpen, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2779083258U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ADoorActor, ADoorActor::StaticClass, TEXT("ADoorActor"), &Z_Registration_Info_UClass_ADoorActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADoorActor), 1992255989U) },
+		{ Z_Construct_UClass_ADoorActor, ADoorActor::StaticClass, TEXT("ADoorActor"), &Z_Registration_Info_UClass_ADoorActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADoorActor), 601885914U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_2781850457(TEXT("/Script/CodeNameLab"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_3245074555(TEXT("/Script/CodeNameLab"),
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::EnumInfo));

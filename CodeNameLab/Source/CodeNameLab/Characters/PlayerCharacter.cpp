@@ -117,16 +117,16 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 
 bool APlayerCharacter::SetupLineTrace(FHitResult& Hit) 
 {
-	FVector StartLocation = GetActorLocation();
-	FVector EndLocation = StartLocation + (GetActorForwardVector() * Range);
+	FVector StartLocation = GetActorLocation() + FirstPersonCameraComponent->GetRelativeLocation();
+	FVector EndLocation = StartLocation + (FirstPersonCameraComponent->GetForwardVector() * Range);
 
 	FCollisionQueryParams QueryParams;
 	QueryParams.AddIgnoredActor(this);
 
-	 return GetWorld()->LineTraceSingleByChannel(Hit,
+	return GetWorld()->LineTraceSingleByChannel(Hit,
 		StartLocation, 
 		EndLocation, 
-		ECollisionChannel::ECC_Visibility, 
+		ECollisionChannel::ECC_WorldStatic, 
 		QueryParams);
 }
 
@@ -153,7 +153,6 @@ void APlayerCharacter::InterfaceCall(FHitResult Hit)
 		if(Item != nullptr)
 		{
 			Inventory.Add(Item);
-			UE_LOG(LogTemp, Error, TEXT("Item : %s has been added to Inventory"), *Item->GetName());
 			Item->Destroy();
 		}
 	}

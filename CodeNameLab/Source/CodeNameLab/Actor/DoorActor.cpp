@@ -28,7 +28,9 @@ void ADoorActor::BeginPlay()
 
 	StartLocation = GetActorLocation();
 
-	StartRotation = GetActorRotation();
+	StartYaw = GetActorRotation().Yaw;
+	CurrentYaw = StartYaw;
+	EndYaw += StartYaw;
 
 }
 
@@ -40,15 +42,11 @@ void ADoorActor::Tick(float DeltaTime)
 	switch (DoorOpeningEnum)
 	{
 	case VE_Rotation:
-		/* code */
+		DoorRotation(DeltaTime);
 		break;
 
 	case VE_Location:
 		LocationMoving(DeltaTime);
-		break;
-		
-	case VE_NotOpen:
-		/* code */
 		break;
 
 	default:
@@ -63,7 +61,6 @@ void ADoorActor::Interact()
 	case ELockType::VE_None:
 		UE_LOG(LogTemp, Error, TEXT("Door Opened"));
 		bOpenDoor = !bOpenDoor;
-		UE_LOG(LogTemp, Error, TEXT("%s"), (bOpenDoor ? TEXT("true"): TEXT("false")));
 		break;
 
 	case ELockType::VE_Never:
@@ -103,7 +100,7 @@ AActor* ADoorActor::FindItemForPickup()
 
 void ADoorActor::SetLock() 
 {
-
+	UE_LOG(LogTemp, Error, TEXT("Lock changing"));
 	if (FindTypeOfLock() == LockEnumOriginal)
 	{
 		LockEnum = VE_None;
@@ -131,5 +128,23 @@ void ADoorActor::LocationMoving(float DeltaTime)
 	float Speed = EndLocation.Length()/MoveTime;
 	FVector NewLocation = FMath::VInterpConstantTo(CurrentLocation, TargetLocation, DeltaTime, Speed);
 	SetActorLocation(NewLocation);
+}
+
+void ADoorActor::DoorRotation(float DeltaTime) 
+{
+	FRotator DoorRotation = GetActorRotation();
+
+	if(bOpenDoor)
+	{
+		CurrentYaw = FMath::Lerp(CurrentYaw, EndYaw, DeltaTime*MoveTime);
+		DoorRotation.Yaw = CurrentYaw;
+		SetActorRotation(DoorRotation);
+	}
+	else
+	{
+		CurrentYaw = FMath::Lerp(CurrentYaw, StartYaw, DeltaTime*MoveTime);
+		DoorRotation.Yaw = CurrentYaw;
+		SetActorRotation(DoorRotation);
+	}
 }
 

@@ -53,9 +53,6 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMeshComp, meta=(AllowPrivateAccess = true))
 	class UStaticMeshComponent* MeshComp;
 
-	UPROPERTY(EditAnywhere)
-	UCurveFloat* DoorCurve;
-
 	bool bOpenDoor = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = DoorOpening, meta=(AllowPrivateAccess = true))
@@ -68,10 +65,12 @@ private:
 	FVector EndLocation;
 
 	UPROPERTY(BlueprintReadOnly, Category = DoorOpening, meta=(AllowPrivateAccess = true, EditCondition = "DoorOpeningEnum == EDoorType::VE_Rotation", EditConditionHides))
-	FRotator StartRotation;
+	float StartYaw;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = DoorOpening, meta=(AllowPrivateAccess = true, EditCondition = "DoorOpeningEnum == EDoorType::VE_Rotation", EditConditionHides))
-	FRotator EndRotation;
+	float EndYaw = 90.f;
+
+	float CurrentYaw;
 
 	UPROPERTY(EditAnywhere, Category = DoorOpening, meta=(AllowPrivateAccess = true))
 	float MoveTime = 4;
@@ -79,5 +78,7 @@ private:
 private:
 
 	void LocationMoving(float DeltaTime);
+
+	void DoorRotation(float DeltaTime);
 
 };
