@@ -126,7 +126,7 @@ bool APlayerCharacter::SetupLineTrace(FHitResult& Hit)
 	return GetWorld()->LineTraceSingleByChannel(Hit,
 		StartLocation, 
 		EndLocation, 
-		ECollisionChannel::ECC_WorldStatic, 
+		ECollisionChannel::ECC_Visibility, 
 		QueryParams);
 }
 
