@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\github\\codenamelab\\codenamelab\\source\\codenamelab\\actor\\basegunweapon.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\x64\\codenamelabeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\codenamelab\\definitions.codenamelab.h",
+            "d:\\github\\codenamelab\\codenamelab\\source\\codenamelab\\actor\\basegunweapon.h",
+            "d:\\github\\codenamelab\\codenamelab\\source\\codenamelab\\interface\\interactinterface.h",
+            "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\unrealeditor\\inc\\codenamelab\\uht\\interactinterface.generated.h",
+            "d:\\github\\codenamelab\\codenamelab\\intermediate\\build\\win64\\unrealeditor\\inc\\codenamelab\\uht\\basegunweapon.generated.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\components\\billboardcomponent.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\billboardcomponent.generated.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "c:\\users\\symms\\documents\\ue_5.2\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
