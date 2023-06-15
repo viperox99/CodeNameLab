@@ -71,14 +71,6 @@ void ADoorActor::Interact()
 		UE_LOG(LogTemp, Error, TEXT("Door is locked from Number Code"));
 		break;
 
-	case ELockType::VE_DeadBolt:
-		UE_LOG(LogTemp, Error, TEXT("Door is locked by Deadbolt"));
-		break;
-
-	case ELockType::VE_Finger:
-		UE_LOG(LogTemp, Error, TEXT("Door is locked by Finger scan"));
-		break;
-	
 	case ELockType::VE_Key:
 		UE_LOG(LogTemp, Error, TEXT("Door is locked by key"));
 		break;

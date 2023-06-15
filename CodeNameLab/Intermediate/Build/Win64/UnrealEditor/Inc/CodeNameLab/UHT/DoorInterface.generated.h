@@ -14,11 +14,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CODENAMELAB_DoorInterface_generated_h
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_SPARSE_DATA
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_RPC_WRAPPERS
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_ACCESSORS
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_STANDARD_CONSTRUCTORS \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_SPARSE_DATA
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_RPC_WRAPPERS
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_ACCESSORS
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	CODENAMELAB_API UDoorInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UDoorInterface) \
@@ -32,7 +32,7 @@ public: \
 	CODENAMELAB_API virtual ~UDoorInterface();
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_ENHANCED_CONSTRUCTORS \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	CODENAMELAB_API UDoorInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -46,7 +46,7 @@ public: \
 	CODENAMELAB_API virtual ~UDoorInterface();
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_GENERATED_UINTERFACE_BODY() \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUDoorInterface(); \
 	friend struct Z_Construct_UClass_UDoorInterface_Statics; \
@@ -55,22 +55,22 @@ public: \
 	DECLARE_SERIALIZER(UDoorInterface)
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_GENERATED_BODY_LEGACY \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_GENERATED_BODY_LEGACY \
 		PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_GENERATED_UINTERFACE_BODY() \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_STANDARD_CONSTRUCTORS \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_GENERATED_UINTERFACE_BODY() \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_STANDARD_CONSTRUCTORS \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_GENERATED_BODY \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_GENERATED_UINTERFACE_BODY() \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_ENHANCED_CONSTRUCTORS \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_GENERATED_UINTERFACE_BODY() \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IDoorInterface() {} \
 public: \
@@ -79,7 +79,7 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_INCLASS_IINTERFACE \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_INCLASS_IINTERFACE \
 protected: \
 	virtual ~IDoorInterface() {} \
 public: \
@@ -88,25 +88,25 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_22_PROLOG
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_33_GENERATED_BODY_LEGACY \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_20_PROLOG
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_31_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_SPARSE_DATA \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_RPC_WRAPPERS \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_ACCESSORS \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_INCLASS_IINTERFACE \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_SPARSE_DATA \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_RPC_WRAPPERS \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_ACCESSORS \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_33_GENERATED_BODY \
+#define FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_SPARSE_DATA \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_ACCESSORS \
-	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_25_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_SPARSE_DATA \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_ACCESSORS \
+	FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_23_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -122,7 +122,5 @@ template<> CODENAMELAB_API UClass* StaticClass<class UDoorInterface>();
 	op(VE_Never) \
 	op(VE_Key) \
 	op(VE_KeyCard) \
-	op(VE_Number) \
-	op(VE_DeadBolt) \
-	op(VE_Finger) 
+	op(VE_Number) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

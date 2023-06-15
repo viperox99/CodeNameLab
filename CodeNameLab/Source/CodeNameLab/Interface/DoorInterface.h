@@ -13,9 +13,7 @@ enum ELockType
 	VE_Never 		UMETA(DisplayName = "Never Opens"),
 	VE_Key  		UMETA(DisplayName = "Key Lock"),
 	VE_KeyCard  	UMETA(DisplayName = "KeyCard Lock"),
-	VE_Number  		UMETA(DisplayName = "Number Lock"),
-	VE_DeadBolt  	UMETA(DisplayName = "Dead bolt Lock"),
-	VE_Finger 		UMETA(DisplayName = "Finger Print Lock")
+	VE_Number  		UMETA(DisplayName = "Number Lock")
 };
 
 // This class does not need to be modified.

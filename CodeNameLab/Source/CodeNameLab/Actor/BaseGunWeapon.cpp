@@ -63,6 +63,11 @@ bool ABaseGunWeapon::SetupLineTrace(FHitResult Hit)
 	);
 }
 
+AActor* ABaseGunWeapon::SpawnActor(AActor* Actor) 
+{
+	return this;
+}
+
 void ABaseGunWeapon::PlaySoundAtLocation( FVector Location) 
 {
 	if(Sound == nullptr)

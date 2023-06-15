@@ -45,6 +45,8 @@ protected:
 
 	bool SetupLineTrace(FHitResult Hit);
 
+	AActor* SpawnActor(AActor* Actor);
+
 	void PlaySoundAtLocation(FVector Location);
 
 };

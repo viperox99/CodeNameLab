@@ -150,13 +150,13 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		{ "ModuleRelativePath", "Actor/DoorActor.h" },
 	};
 #endif
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnum = { "LockEnum", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, LockEnum), Z_Construct_UEnum_CodeNameLab_ELockType, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnum_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnum_MetaData)) }; // 613784444
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnum = { "LockEnum", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, LockEnum), Z_Construct_UEnum_CodeNameLab_ELockType, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnum_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnum_MetaData)) }; // 4226605545
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal_MetaData[] = {
 		{ "ModuleRelativePath", "Actor/DoorActor.h" },
 	};
 #endif
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal = { "LockEnumOriginal", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, LockEnumOriginal), Z_Construct_UEnum_CodeNameLab_ELockType, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal_MetaData)) }; // 613784444
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal = { "LockEnumOriginal", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(ADoorActor, LockEnumOriginal), Z_Construct_UEnum_CodeNameLab_ELockType, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_LockEnumOriginal_MetaData)) }; // 4226605545
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComp_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -279,9 +279,9 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		{ EDoorOpen_StaticEnum, TEXT("EDoorOpen"), &Z_Registration_Info_UEnum_EDoorOpen, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2779083258U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ADoorActor, ADoorActor::StaticClass, TEXT("ADoorActor"), &Z_Registration_Info_UClass_ADoorActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADoorActor), 601885914U) },
+		{ Z_Construct_UClass_ADoorActor, ADoorActor::StaticClass, TEXT("ADoorActor"), &Z_Registration_Info_UClass_ADoorActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADoorActor), 2876057895U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_3245074555(TEXT("/Script/CodeNameLab"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_2274731022(TEXT("/Script/CodeNameLab"),
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Actor_DoorActor_h_Statics::EnumInfo));

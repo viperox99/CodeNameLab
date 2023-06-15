@@ -42,17 +42,11 @@ void EmptyLinkFunctionForGeneratedCodeDoorInterface() {}
 		{ "VE_Key", (int64)VE_Key },
 		{ "VE_KeyCard", (int64)VE_KeyCard },
 		{ "VE_Number", (int64)VE_Number },
-		{ "VE_DeadBolt", (int64)VE_DeadBolt },
-		{ "VE_Finger", (int64)VE_Finger },
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_CodeNameLab_ELockType_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "ModuleRelativePath", "Interface/DoorInterface.h" },
-		{ "VE_DeadBolt.DisplayName", "Dead bolt Lock" },
-		{ "VE_DeadBolt.Name", "VE_DeadBolt" },
-		{ "VE_Finger.DisplayName", "Finger Print Lock" },
-		{ "VE_Finger.Name", "VE_Finger" },
 		{ "VE_Key.DisplayName", "Key Lock" },
 		{ "VE_Key.Name", "VE_Key" },
 		{ "VE_KeyCard.DisplayName", "KeyCard Lock" },
@@ -150,12 +144,12 @@ void EmptyLinkFunctionForGeneratedCodeDoorInterface() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::EnumInfo[] = {
-		{ ELockType_StaticEnum, TEXT("ELockType"), &Z_Registration_Info_UEnum_ELockType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 613784444U) },
+		{ ELockType_StaticEnum, TEXT("ELockType"), &Z_Registration_Info_UEnum_ELockType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4226605545U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_UDoorInterface, UDoorInterface::StaticClass, TEXT("UDoorInterface"), &Z_Registration_Info_UClass_UDoorInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDoorInterface), 1552722530U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_731902150(TEXT("/Script/CodeNameLab"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_3793377060(TEXT("/Script/CodeNameLab"),
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CodeNameLab_Source_CodeNameLab_Interface_DoorInterface_h_Statics::EnumInfo));
