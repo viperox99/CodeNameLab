@@ -65,7 +65,14 @@ bool ABaseGunWeapon::SetupLineTrace(FHitResult Hit)
 
 AActor* ABaseGunWeapon::SpawnActor(AActor* Actor) 
 {
-	return this;
+	if(Actor == nullptr)
+	{
+		return nullptr;
+	}
+
+	FTransform SpawnTransform = GetActorTransform() + MuzzleLocation->GetRelativeTransform();
+
+	return GetWorld()->SpawnActor<AActor>(Actor->GetClass(), SpawnTransform);
 }
 
 void ABaseGunWeapon::PlaySoundAtLocation( FVector Location) 
