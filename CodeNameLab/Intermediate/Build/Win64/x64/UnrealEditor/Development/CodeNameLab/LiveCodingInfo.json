@@ -1,5 +1,39 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.CodeNameLab.cpp.obj": [
+			"BaseGunWeapon.gen.cpp.obj",
+			"CodeNameLabCharacter.gen.cpp.obj",
+			"CodeNameLabGameMode.gen.cpp.obj",
+			"CodeNameLabProjectile.gen.cpp.obj",
+			"DoorActor.gen.cpp.obj",
+			"DoorInterface.gen.cpp.obj",
+			"InteractInterface.gen.cpp.obj",
+			"KeyActor.gen.cpp.obj",
+			"KeyInterface.gen.cpp.obj",
+			"PlayerCharacter.gen.cpp.obj",
+			"PressurePlate.gen.cpp.obj",
+			"TP_PickUpComponent.gen.cpp.obj",
+			"TP_WeaponComponent.gen.cpp.obj",
+			"WeightInterface.gen.cpp.obj",
+			"BaseGunWeapon.cpp.obj",
+			"DoorActor.cpp.obj",
+			"KeyActor.cpp.obj",
+			"PressurePlate.cpp.obj",
+			"PlayerCharacter.cpp.obj",
+			"CodeNameLab.cpp.obj",
+			"CodeNameLabCharacter.cpp.obj",
+			"CodeNameLabGameMode.cpp.obj",
+			"CodeNameLabProjectile.cpp.obj",
+			"DoorInterface.cpp.obj",
+			"InteractInterface.cpp.obj",
+			"KeyInterface.cpp.obj",
+			"WeightInterface.cpp.obj",
+			"TP_PickUpComponent.cpp.obj",
+			"TP_WeaponComponent.cpp.obj",
+			"CodeNameLab.init.gen.cpp.obj",
+			"HealthComponent.gen.cpp.obj",
+			"HealthComponent.cpp.obj"
+		]
 	}
 }
