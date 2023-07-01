@@ -8,6 +8,7 @@
 			"CodeNameLabProjectile.gen.cpp.obj",
 			"DoorActor.gen.cpp.obj",
 			"DoorInterface.gen.cpp.obj",
+			"HealthComponent.gen.cpp.obj",
 			"InteractInterface.gen.cpp.obj",
 			"KeyActor.gen.cpp.obj",
 			"KeyInterface.gen.cpp.obj",
@@ -25,6 +26,7 @@
 			"CodeNameLabCharacter.cpp.obj",
 			"CodeNameLabGameMode.cpp.obj",
 			"CodeNameLabProjectile.cpp.obj",
+			"HealthComponent.cpp.obj",
 			"DoorInterface.cpp.obj",
 			"InteractInterface.cpp.obj",
 			"KeyInterface.cpp.obj",
@@ -32,8 +34,8 @@
 			"TP_PickUpComponent.cpp.obj",
 			"TP_WeaponComponent.cpp.obj",
 			"CodeNameLab.init.gen.cpp.obj",
-			"HealthComponent.gen.cpp.obj",
-			"HealthComponent.cpp.obj"
+			"HealingDamageType.gen.cpp.obj",
+			"HealingDamageType.cpp.obj"
 		]
 	}
 }

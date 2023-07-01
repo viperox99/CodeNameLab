@@ -35,7 +35,7 @@
 /FUNCTIONPADMIN:6
 "D:\GitHub\CodeNameLab\CodeNameLab\Intermediate\Build\Win64\x64\CodeNameLabEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
 "D:\GitHub\CodeNameLab\CodeNameLab\Intermediate\Build\Win64\x64\UnrealEditor\Development\CodeNameLab\Module.CodeNameLab.cpp.obj"
-"D:\GitHub\CodeNameLab\CodeNameLab\Intermediate\Build\Win64\x64\UnrealEditor\Development\CodeNameLab\HealthComponent.cpp.obj"
+"D:\GitHub\CodeNameLab\CodeNameLab\Intermediate\Build\Win64\x64\UnrealEditor\Development\CodeNameLab\HealingDamageType.cpp.obj"
 "D:\GitHub\CodeNameLab\CodeNameLab\Intermediate\Build\Win64\x64\UnrealEditor\Development\CodeNameLab\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"
